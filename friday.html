@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+        </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="friday.css">
+</head>
+
+
+
+
+
+<body class="container-fluid">
+
+    <!--Populating div and button well-->
+    <div class="row" id="populate">
+
+        <!--Button that decides where the next card will be-->
+        <div class="col-sm-3 well">
+            <form>
+                <!--If you wrap them in the form you don't have to link up the inputs-->
+                <span id="add" class="glyphicon glyphicon-plus glf"></span>
+                <!--The id is used for a jQuery call-->
+                <input type="text" placeholder="Location" id="enterzip" class="pushRight">
+            </form>
+            <span class=" glyphicon glyphicon-remove" id="deleteButton"> Remove all</span>
+        </div>
+
+        <!--"<div class='col-sm-3 well delete map'><span class ='delTemplate glyphicon glyphicon-remove'></span></div>"-->
+
+    </div>
+    </div>
+    <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYm4fb93sqWk6LRN1KF1UIrMKlzYf5E0&callback=initMap"></script>-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="friday.js"></script>
+</body>
+
+
+</html>
