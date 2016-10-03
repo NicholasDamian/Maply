@@ -9,6 +9,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="friday.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
 </head>
 
 
@@ -31,11 +33,17 @@
             <span class=" glyphicon glyphicon-remove" id="deleteButton"> Remove all</span>
         </div>
 
-        <!--"<div class='col-sm-3 well delete map'><span class ='delTemplate glyphicon glyphicon-remove'></span></div>"-->
+        <div class='col-sm-3 well delete '><span class ='delTemplate glyphicon glyphicon-remove'></span><div id='map'></div></div>
 
     </div>
     </div>
+        <script>
+ var map; function initMap() { map = new google.maps.Map(document.getElementById('map'), { center: {lat: -34.397, lng:
+150.644}, zoom: 8 }); }
+    </script>
     <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYm4fb93sqWk6LRN1KF1UIrMKlzYf5E0&callback=initMap"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMYm4fb93sqWk6LRN1KF1UIrMKlzYf5E0&callback=initMap" async defer></script>
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="friday.js"></script>

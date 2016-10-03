@@ -1,7 +1,7 @@
 /*Controls the size of the well*/
 .well{
     background-color: lightblue;
-    height: 350px;
+    height: 100%;
     opacity: .7;
     margin: 30px;
 }
@@ -54,6 +54,12 @@ hr{
     margin: 0px 50px 0px 0px;
     background-color: lightblue;
     opacity: .7;
+}
+#map{
+    height: 60%;
+}
+#populate{
+    height: 400px;
 }
 
 /*ul{
